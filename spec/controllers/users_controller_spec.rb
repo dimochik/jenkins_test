@@ -27,7 +27,12 @@ describe UsersController do
     {}
   end
 
+
   describe "GET index" do
+    it " should fail" do
+      false.should be_true
+    end
+
     it "assigns all users as @users" do
       user = User.create! valid_attributes
       get :index
